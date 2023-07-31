@@ -320,44 +320,58 @@
     <section class="inline">
       <h3 class="lookfor lookfor-h3">SUSCRIBACE AL BOLETIN INFORMATIVO</h3>
       <div class="bulletin">
-        <label for="email">
-          <input class="bulletin__informative" di="email" type="email" placeholder="your@email.com">
-        </label>
-        <button class="form__button bulletin__button" type="submit">SUSCRIBACE <svg width="24" heigth="24"><use href="./img/symbol-defs.svg#icon-icon-send"></use></svg></button>
+          <label for="email">
+              <input class="bulletin__informative" di="email" type="email" placeholder="your@email.com">
+          </label>
+            <button class="form__button bulletin__button" type="submit">SUSCRIBACE <svg width="24" heigth="24"><use href="./img/symbol-defs.svg#icon-icon-send"></use></svg></button>
+          </div>
+        </section>
       </div>
-     </section>
-       </div>
     </footer>
     <div class="backdrop backdrop-padding is-hidden" data-modal="">
       <div class="modal">
         <button type="button" class="modal__close" data-modal-close=""><svg width="11" height="11"><use href="./img/symbol-defs.svg#icon-close-black-18dp-2-1"></use></svg></button>
         <form class="form" autocomplete="on" >
           <p class="form__data">Deje sus datos, nos contactaremos con usted</p>
-          <div class="form-field">
-          <label for="name">Nombre</label>
-            <input type="text" name="name" id="name" required="" maxlength="15" title="este elemento es requerido" placeholder="Escribe tu nombre" class="form__modal form__style">
-            <svg width="18px" height="18px" class="form__svg"><use href="./img/symbol-defs.svg#icon-person-black-18dp-1"></use></svg>
+          <label class="modal-form-label">Name 
+            <div class="input-container">
+              <input class="modal-form-input" type="text" name="name" autofocus />
+              <div class="input-placeholder-icon-container">
+                <svg class="input-placeholder-icon" width="12" height="12">
+                  <use href="./img/symbol-defs.svg#icon-person-black-18dp-1"></use>
+                </svg>
+              </div>
             </div>
-            <div class="form-field">
-            <label for="tel">Telefono</label>
-            <input class="form__modal form__style" type="tel" name="tel" id="tel" placeholder="" >
-            <svg width="18px" height="18px" class="form__svg"><use href="./img/symbol-defs.svg#icon-phone-black-18dp-1"></use></svg>
+          </label>
+          <label class="modal-form-label">telefono
+            <div class="input-container">
+              <input class="modal-form-input" type="number" name="telefono" autofocus />
+              <div class="input-placeholder-icon-container">
+                <svg class="input-placeholder-icon" width="12" height="12">
+                  <use href="./img/symbol-defs.svg#icon-phone-black-18dp-1"></use>
+                </svg>
+              </div>
             </div>
-            <div class="form-field">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="ejemplo@gmail.com" class="form__modal form__style">
-            <svg width="18px" height="18px" class="form__svg"><use href="./img/symbol-defs.svg#icon-email-black-18dp-1"></use></svg>
+          </label>
+          <label class="modal-form-label">Email
+            <div class="input-container">
+              <input class="modal-form-input" type="Email" name="Email" autofocus />
+              <div class="input-placeholder-icon-container">
+                <svg class="input-placeholder-icon" width="12" height="12">
+                  <use href="./img/symbol-defs.svg#icon-email-black-18dp-1"></use>
+                </svg>
+              </div>
             </div>
-            <div class="form-field">
+          </label>
             <label for="comment">Comentarios</label>
             <textarea name="comment" id="comment" minlength="3" maxlength="100" rows="6" placeholder="Introdusca el texto" class="form__textarea"></textarea>
-            </div>
-            <div>
-          <label for="policy" class="form-field-checkbox">
-            <input type="checkbox" checked="checked" value="accept" class="form__checkbox" id="policy">
-              <span class="form__span">Estoy de acuerdo con el voletin informativo y acepto los <a href="" class="form__terms"> terminos y condiciones</a></span>
-          </label>
-            </div>
+              <label class="modal-form-label label-checkbox">
+                <input class="modal-form-label-checkbox"type="checkbox"name="checked"value="agreed"/>
+                <span class="checkbox-icon-container">
+                  <svg class="checkbox-icon" width="11" height="8">
+                    <use href="./img/icons.svg#checked"></use>
+                  </svg></span><span class="checkbox-text">estoy de acuerdo con el voletin informativo y acepto los termonos y condiciones</span>
+              </label>
             <div class="form-button">
             <button type="submit" class="form__button" data-modal-open="">Enviar</button>
             </div>
