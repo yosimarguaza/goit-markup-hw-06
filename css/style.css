@@ -873,6 +873,16 @@ img {
   margin-top: 7px;
 }
 
+.modal__close:hover,
+.modal__close:focus {
+  border: solid 2px var(--blue-color);
+}
+
+.modal__close:hover svg,
+.modal__close:focus svg {
+  fill: var(--blue-color);
+}
+
 .form {
   padding: 40px;
 }
@@ -888,17 +898,18 @@ img {
   margin: 0px;
 }
 
-.modal-form-input:focus {
-  fill: red;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .modal-form-input:hover,
 .modal-form-input:focus {
   border: 1px solid var(--blue-color);
 }
 
+.modal-form-input:hover svg,
+.modal-form-input:focus svg {
+  fill: var(--blue-color);
+}
+
 .form__textarea {
+  width: 100%;
   margin-top: 4px;
   margin-bottom: 20px;
   padding: 12px 16px;
@@ -929,8 +940,8 @@ textarea {
   color: var(--color-de-parrafo);
 }
 
-.input-container:hover svg,
-.input-container:focus svg {
+.input-container:focus svg,
+.input-container:hover svg {
   fill: var(--blue-color);
 }
 
