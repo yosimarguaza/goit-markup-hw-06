@@ -568,6 +568,8 @@ footer {
   border-radius: 4px;
   width: 358px;
   height: 50px;
+  font-size: 16px;
+  color: var(--white-color);
   background-color: #2f303a;
 }
 
@@ -797,6 +799,13 @@ img {
   margin: 0 10px 0 0;
 }
 
+.link-portafolio:hover {
+  background: var(--blue-color);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+  filter: none;
+}
+
 .content-address .address-city {
   width: 276px;
   font-size: 14px;
@@ -923,7 +932,7 @@ textarea {
   margin: 0;
 }
 
-.rojo {
+.form-group-checkbox {
   margin-bottom: 30px;
 }
 
@@ -938,8 +947,8 @@ textarea {
   color: var(--color-de-parrafo);
 }
 
-.input-container:focus svg,
-.input-container:hover svg {
+.input-container:hover svg,
+.input-container:focus svg {
   fill: var(--blue-color);
 }
 
@@ -956,7 +965,8 @@ textarea {
   padding-bottom: 12px;
   padding-right: 12px;
   padding-left: 42px;
-  width: 100%;
+  width: 391px;
+  outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   font-size: var(--secondary-text-size);
@@ -982,6 +992,7 @@ textarea {
   margin-bottom: 0;
   align-items: center;
 }
+
 .checkbox-icon-container {
   display: flex;
   justify-content: center;
