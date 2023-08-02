@@ -848,9 +848,8 @@ img {
   position: absolute;
   top: 53%;
   left: 50%;
-  /*height: 100%;*/
-  max-height: 650px;
   width: 528px;
+  height: 581px;
   margin: 0 auto;
   background-color: #fff;
   transform: translate(-50%, -50%) scale(1);
@@ -903,16 +902,14 @@ img {
   border: 1px solid var(--blue-color);
 }
 
-.modal-form-input:hover svg,
-.modal-form-input:focus svg {
-  fill: var(--blue-color);
-}
-
 .form__textarea {
+  display: block;
   width: 100%;
+  box-sizing: border-box;
   margin-top: 4px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding: 12px 16px;
+  resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: 0;
@@ -921,12 +918,13 @@ img {
 }
 
 textarea {
-  resize: none;
-  font-size: 14px;
   font-family: inherit;
-  font-size: 100%;
   line-height: 1.15;
   margin: 0;
+}
+
+.rojo {
+  margin-bottom: 30px;
 }
 
 .modal-form-label {
@@ -946,7 +944,6 @@ textarea {
 }
 
 .input-container {
-  padding-right: 57px;
   position: relative;
   fill: var(--main-color-dark);
   transition: fill var(--main-transition-duration)
@@ -1006,6 +1003,7 @@ textarea {
 }
 
 .modal-form-label-checkbox:checked + .checkbox-icon-container {
+  background-image: url(../img/ícono\ revisado.svg);
   border-color: var(--accent-color);
   background-color: var(--accent-color);
 }
@@ -1016,7 +1014,7 @@ textarea {
 }
 
 .form-button {
-  margin: 8px;
+  margin: 0;
   display: flex;
   justify-content: center;
 }
